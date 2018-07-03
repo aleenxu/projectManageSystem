@@ -1,0 +1,220 @@
+.rel{
+    position: relative;
+}
+
+/* 弹性盒子 flex */
+.flex-box{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+}
+/* 修改input placeholder 颜色 */
+input::-webkit-input-placeholder{ /*WebKit browsers*/
+    color: #333;
+}
+
+input::-moz-input-placeholder{ /*Mozilla Firefox*/
+    color: #333;
+}
+input::-ms-input-placeholder{ /*Internet Explorer*/ 
+    color: #333;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+input{
+    padding:0 5px;
+}
+.dn{
+    display: none!important;
+}
+.text-c{
+    text-align:center!important;
+}
+i.tag-close{
+    width:25px;
+    height:25px;
+    position: absolute;
+    z-index: 1;
+    top:-15px;
+    right:-15px;
+    border-radius: 100px;
+    display: block;
+    background:url(../images/icon_close.png) no-repeat #333 center center;
+    background-size: 15px 15px;
+    cursor:pointer;
+}
+/* 透明层 */
+.pop-box{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 1;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items:flex-start;
+    -webkit-align-items:flex-start;
+}
+.white-bg{
+    background:#fff;
+}
+.black-bg{
+    background:#000;
+}
+.opacity-div{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:.8;
+    z-index: -1;
+    text-indent: -9999em;
+}
+.input-auto{
+    width:100%;
+}
+.input-t1{
+    width:100px;
+}
+.select-s1{
+    width:120px;
+}
+.select-s2{
+    width:60px;
+}
+.form-date input{
+    cursor:pointer;
+}
+.ClassTable tr th,.ClassTable tr td{
+    padding:0 8px;
+}
+.ClassTable tr th.td-num,.ClassTable tr td .td-num{
+    width:80px!important;
+}
+.ClassTable tr td .td-num{
+    color:#5f9eeb;
+    text-decoration: underline;
+}
+.ClassTable tr td .td-max-width{
+    width:120px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.ClassTable tr td .td-box-dd{
+    width:60px;
+    position: absolute;
+    left:50%;
+    top:26px;
+    /* transform: translate(0,-25%); */
+    z-index: 1;
+    border:1px #ccc solid;
+    display: inline-block;
+    background:#fafafa;
+    overflow:hidden;
+}
+.ClassTable tr td .td-box-dd dl{
+    margin:0;
+}
+.ClassTable tr td .td-box-dd dl dd{
+    display: block;
+    height:25px;
+    line-height:25px;
+    background:#cdcdcd;
+    cursor: pointer;
+    border-bottom:1px #fafafa solid;
+}
+.ClassTable tr td .td-box-dd dl dd:hover{
+    background:#5f9eeb;
+    color:#fff;
+}
+.icon-check{
+    width:16px;
+    height:16px;
+    display: inline-block;
+    background:url(../images/icon_check.svg);
+    background-size:cover;
+    cursor:pointer;
+}
+.icon-checked{
+    background:url(../images/icon_checked.svg);
+    background-size:cover;
+}
+/* 新建工程、编辑工程 */
+.tab-box{
+    font-size:12px;
+    position: relative;
+    z-index: 1;
+    color:#fff;
+    margin:40px 0 30px;
+    padding:20px 30px;
+    user-select: none;
+}
+
+.tab-box table{
+    border:none;
+}
+.tab-box table tbody tr td{
+    padding:0 0 5px;
+}
+.tab-box table tbody tr td:nth-child(odd){
+    text-align: right;
+}
+
+.tab-box table tbody tr td:nth-child(3){
+    text-indent: 10px;
+}
+.tab-box table tbody tr td input,.tab-box table tbody tr td select,.tab-box table tbody tr td textarea{
+    color:#333;
+}
+
+.tab-box table tbody tr td textarea{
+    width:100%;
+    padding:3px 5px;
+}
+/* 详细 */
+.text-con-box{
+    max-width:400px;
+    word-break:break-word;
+}
+.tab-detail{
+    border:1px #111 solid;
+}
+.tab-detail tbody tr td{
+    border:1px #111 solid;
+    border-collapse: collapse;
+    padding:5px!important;
+}
+/* 评价 */
+.tab-evaluate{
+    border-bottom:none;
+}
+.tab-evaluate tr:last-child td{
+    border:none;
+}
+.tab-evaluate tr td{
+    text-indent: 0!important;
+}
+.tab-evaluate tr td:nth-child(3),.tab-evaluate tr td:nth-child(5){
+    text-align: left!important;
+}
+.flex-justify-around{
+    justify-content: space-around;
+}
+.tab-evaluate tr td label input[type="radio"]{
+    position: relative;
+    margin-left:5px;
+    top:3px;
+}

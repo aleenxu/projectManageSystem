@@ -1,0 +1,163 @@
+*{
+            margin: 0;
+            padding: 0;
+        }
+        /* 透明层 */
+.pop-box{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 1;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items:flex-start;
+    -webkit-align-items:flex-start;
+}
+.black-bg{
+    background:#000;
+}
+.opacity-div{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:.5;
+    z-index: -1;
+    text-indent: -9999em;
+}
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            background: url("../images/background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        }
+        h1.sys-name{
+            color:#fff;
+            font-size: 58px;
+            text-shadow: 2px 2px 3px #000;
+            padding:100px 0 80px;
+            letter-spacing: 20px;
+        }
+        .container {
+            width: 280px;
+            margin: 0 auto;
+            padding: 28px;
+            background-color: rgba(10, 10, 10, 0.77);
+            border: 2px ridge rgba(238, 238, 238, 0.13);
+            border-radius: 5px;
+            -moz-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+            -webkit-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+            box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+            border-bottom: none;
+            border-bottom-left-radius: initial;
+            border-bottom-right-radius: initial;
+        }	
+        .input_outer{
+            height: 46px;
+            padding: 0 5px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            position: relative;
+            border: rgba(255,255,255,0.2) 2px solid !important;
+        }
+        .u_user{
+            width: 25px;
+            height: 25px;
+            background: url(../images/login_ico.png);
+            background-position:  -125px 0;
+            position: absolute;
+            margin: 12px 13px;
+        }
+        .us_uer{
+            width: 25px;
+            height: 25px;
+            background-image: url(../images/login_ico.png);
+            background-position: -125px -34px;
+            position: absolute;
+            left:3px;
+            margin: 12px 13px;
+        }
+        .u_code{
+            width: 25px;
+            height: 25px;
+            background-image: url(../images/icon_code.png);
+            background-size: cover;
+            position: absolute;
+            left:3px;
+            margin: 12px 13px;
+        }
+        .l-login{
+            position: absolute;
+            z-index: 1;
+            left: 55px;
+            top: 0;
+            height: 46px;
+            font: 14px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei";
+            line-height: 46px;
+            color:#fff;
+        }
+        
+        .text{
+            width: 200px;
+            height: 46px;
+            outline: none;
+            display: inline-block;
+            font: 14px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei";
+            margin-left: 55px;
+            padding-right:20px;
+            border: none;
+            background: none;
+            line-height: 46px;
+            color:#fff;
+        }
+        .text-code{
+            width:80px;
+        }
+        .send-button {
+            margin-bottom: 20px;
+        }
+        
+        .send-button input[type="submit"] {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: 100;
+            background-color: transparent;
+            color: #CCC;
+            border: rgba(255,255,255,0.2) 2px solid !important;
+            border-width: thin;
+            cursor: pointer;
+            outline: none;
+            transition:0.5s all;
+            -webkit-transition:0.5s all;
+            -moz-transition:0.5s all;
+            -o-transition:0.5s all;
+            -ms-transition:0.5s all;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        /*--w3layouts--*/
+        /*--agileits--*/
+        .send-button input[type="submit"]:hover {
+            background-color: #000;
+            border: 2px solid #FFF;
+            color: #FFF;
+            transition:0.5s all;
+            -webkit-transition:0.5s all;
+            -moz-transition:0.5s all;
+            -o-transition:0.5s all;
+            -ms-transition:0.5s all;
+            text-decoration: none;
+        }

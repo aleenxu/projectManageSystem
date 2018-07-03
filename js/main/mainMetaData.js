@@ -1,0 +1,12 @@
+$(function(){
+    $("#searchBtn").on("click",function(){
+        $.myAlert({
+            title:"提示",
+            message:"没有符合条件的数据",
+            callback:function(){
+                location.reload();
+            }
+        });
+        hideLeftBar();
+    });
+});

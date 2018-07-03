@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+
+</head>
+
+<body class="Fleft_body">
+<table width="100%" height="280" border="0" cellpadding="0" cellspacing="0" bgcolor="#EEF2FB">
+  <tr>
+    <td width="182" valign="top"><div id="container">
+      <h1 class="type"><a href="javascript:void(0)">工程管理</a></h1>
+      <div class="content" style="display:block;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="images/menu_topline.gif" width="182" height="5" /></td>
+          </tr>
+        </table>
+        <ul class="MM">
+          <li><a href="main.html" target="mainFrame">工程管理</a></li>
+          <li><a data-type="1" href="typeList.html" target="mainFrame">设计单位管理</a></li>
+          <li><a data-type="3" href="typeList.html" target="mainFrame">监理单位管理</a></li>
+          <li><a data-type="4" href="typeList.html" target="mainFrame">施工单位管理</a></li>
+          <li><a data-type="5" href="typeList.html" target="mainFrame">防水单位管理</a></li>
+          <li><a data-type="2" href="typeList.html" target="mainFrame">造价咨询管理</a></li>
+          <li><a data-type="6" href="typeList.html" target="mainFrame">结算审计管理</a></li>
+          <li><a href="auditingList.html" target="mainFrame">审核管理</a></li>
+          <li><a href="countList.html" target="mainFrame">统计分析</a></li>
+        </ul>
+      </div>
+      <h1 class="type"><a href="javascript:void(0)">系统管理</a></h1>
+      <div class="content" style="display:block;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="images/menu_topline.gif" width="182" height="5" /></td>
+          </tr>
+        </table>
+        <ul class="MM">
+          <li><a href="userList.html" target="mainFrame">用户管理</a></li>
+          <li><a href="userGroupList.html" target="mainFrame">用户组管理</a></li>
+          <li><a href="systemList.html" target="mainFrame">系统操作日志</a></li>
+        </ul>
+      </div>
+      </div>
+        
+        </td>
+  </tr>
+</table>
+<script src="plugs/jquery-2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+   $("#container").find(">h1.type").click(function(){
+	  $(this).next().slideToggle(1000).end().siblings(".type").next().slideUp();
+   })
+})
+</script>
+</body>
+</html>

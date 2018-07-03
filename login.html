@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="plugs/alert-tips/my-alert.css">
+    
+</head>
+<body>
+    <h1 class="sys-name">工程管理系统</h1>
+    <div class="container">
+        <form action="" name="f" method="get">
+            <div class="input_outer">
+                <span class="u_user"></span>
+                <input name="logname" class="text" onfocus=" if(this.value=='输入用户名登录') this.value=''" onblur="if(this.value=='') this.value='输入用户名登录'" value="输入用户名登录" style="color: #FFFFFF !important" type="text">
+            </div>
+            <div class="input_outer">
+                <span class="us_uer"></span>
+                <label class="l-login login_password">输入密码</label>
+                <input name="logpass" class="text" style="position:absolute;z-index:2;left:5px;" onfocus="$('.login_password').hide()" onblur="if(this.value=='') $('.login_password').show()" value="" type="password">
+            </div>
+            <div class="input_outer" style="width:150px;">
+                <span class="u_code"></span>
+                <input name="logcode" class="text text-code" onfocus=" if(this.value=='验证码') this.value=''" onblur="if(this.value=='') this.value='验证码'" value="验证码" style="color: #FFFFFF !important" type="text">
+            </div>
+            <div class="send-button">
+				<input id="loginBtn" type="submit" value="登 录">
+            </div>
+        </form>
+    
+        
+        
+    </div>
+    <script src="plugs/jquery-2.1.4/jquery.min.js"></script>
+    <script src="plugs/alert-tips/my-alert.js"></script>
+    <script src="js/login/loginMetaData.js"></script>
+    <script src="js/login/login.js"></script>
+</body>
+</html>
